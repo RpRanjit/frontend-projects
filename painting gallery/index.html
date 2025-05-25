@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#"><img src="assets/logo.png" alt="" /></a>
+        <ul class="sidebar">
+          <li class="menu-btn" onclick="hideSidebar()">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </li>
+          <li><a href="#"> Home </a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#"> About </a></li>
+          <li><a href="#"> Contact us </a></li>
+          <li><a href="#">Page</a></li>
+        </ul>
+        <ul>
+          <li class="hiddenOnMobile"><a href="#"> Home </a></li>
+          <li class="hiddenOnMobile">
+            <a href="#">Services<i class="fa-solid fa-angle-down"></i></a>
+          </li>
+          <li class="hiddenOnMobile">
+            <a href="#">Pages<i class="fa-solid fa-angle-down"></i></a>
+          </li>
+          <li class="hiddenOnMobile"><a href="#"> About </a></li>
+          <li class="hiddenOnMobile"><a href="#"> Contact us </a></li>
+          <li class="menu-btn" onclick="showSidebar()">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content">
+        <div class="section_container header_container" id="home">
+          <h1>Myglaos</h1>
+          <h1>Art</h1>
+          <button class="btn">Famous Arts</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="second_container">
+          <img src="assets/image 2.jpg" alt="image 2" class="paint-img" />
+          <div class="second_contents">
+            <span>on this day 2025, june 24</span>
+            <hr />
+            <h1>Painting</h1>
+            <p>
+              Painting is a form of visual art that involves the application of
+              pigment to a surface, such as canvas, wood, paper, or a wall, to
+              create an image, design, or expression.
+            </p>
+            <button class="second-btn">Explore more</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="third-container">
+          <h1>Trending Products</h1>
+          <div class="contents">
+            <h3><span>Features</span></h3>
+            <h3>Popular</h3>
+          </div>
+          <div class="pop-paintings">
+            <div class="painting1" id="paintings">
+              <a href=""><img src="assets/painting1.jpg" alt="" /></a>
+              <p>Las Meninas By Diego Velázquez</p>
+              <span>$24,000</span>
+            </div>
+            <div class="painting2" id="paintings">
+              <a href=""><img src="assets/painting2.jpg" alt="" /></a>
+              <p>The Peaceable Kingdom By Edward Hicks</p>
+              <span>$20,000</span>
+            </div>
+            <div class="painting3" id="paintings">
+              <a href=""><img src="assets/painting3.jpg" alt="" /></a>
+              <p>Musicians By Caravaggio</p>
+              <span>$19,000</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="fourth-container">
+          <div class="full-desc">
+            <hr class="first" />
+            <div class="desc">
+              <p>See Our Collection of</p>
+              <h2>Paintings</h2>
+            </div>
+            <hr class="second" />
+          </div>
+          <div class="pic-collection">
+            <div class="first-colm">
+              <img
+                src="assets/painting8.jpg"
+                alt=""
+                style="width: 100%; max-width: 110px"
+              />
+              <img
+                src="assets/painting5.jpg"
+                alt=""
+                style="width: 100%; max-width: 110px"
+              />
+            </div>
+            <div class="second-colm">
+              <img
+                src="assets/painting6.jpg"
+                alt=""
+                style="width: 100%; max-width: 110px"
+              />
+              <img
+                src="assets/painting7.jpg"
+                alt=""
+                style="width: 100%; max-width: 110px"
+              />
+            </div>
+            <div class="third-colm">
+              <img
+                src="assets/painting4.jpg"
+                alt=""
+                style="width: 100%; max-width: 110px"
+              />
+              <img
+                src="assets/painting9.jpg"
+                alt=""
+                style="width: 100%; max-width: 110px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="service-container">
+          <h1>Services</h1>
+          <div class="services">
+            <div class="blog-container">
+              <div class="content-blog">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <img src="assets/drowning.jpg" alt="" />
+                <div class="desc">
+                  <h2>Drowning</h2>
+                  <p>
+                    Painting on wet plaster, typically on walls or celling.
+                    Famous for its durability and historical use in murals.
+                  </p>
+                  <button>Learn more</button>
+                </div>
+              </div>
+            </div>
+            <div class="blog-container">
+              <div class="content-blog">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <img src="assets/drowning.jpg" alt="" />
+                <div class="desc">
+                  <h2>Drowning</h2>
+                  <p>
+                    Painting on wet plaster, typically on walls or celling.
+                    Famous for its durability and historical use in murals.
+                  </p>
+                  <button>Learn more</button>
+                </div>
+              </div>
+            </div>
+            <div class="blog-container">
+              <div class="content-blog">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <img src="assets/drowning.jpg" alt="" />
+                <div class="desc">
+                  <h2>Drowning</h2>
+                  <p>
+                    Painting on wet plaster, typically on walls or celling.
+                    Famous for its durability and historical use in murals.
+                  </p>
+                  <button>Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="contact-us">
+          <div class="contact-desc">
+            <h1>Contact us</h1>
+            <p>For More inquiry</p>
+          </div>
+          <div class="sculpt-img"><img src="assets/sculpture.png" alt="" /></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="exibition-form">
+          <h1>Virtual</h1>
+          <h1>Exibition</h1>
+          <div class="second-part">
+            <img src="assets/painting6.jpg" alt="" />
+            <form action="">
+              <h2>Get in touch</h2>
+              <hr />
+              <label for="email" class="email" id="email">Email</label>
+              <input type="email" placeholder="Enter your email" />
+              <label for="gender" class="gender" id="gender">Gender</label>
+              <input type="text" placeholder="Enter your Gender" />
+              <label for="password" class="password" id="password"
+                >Password</label
+              >
+              <input type="password" placeholder="Enter your Password" />
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="pricing-details">
+          <h1>Pricing Details</h1>
+          <div class="pricing-table">
+            <table>
+              <tr>
+                <th>S.N</th>
+                <th>Name</th>
+                <th>Artist</th>
+                <th>Painting</th>
+                <th>Pricing</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>The Lock</td>
+                <td>John Constable</td>
+                <td>
+                  <a href=""><img src="assets/pop-paintings.jpg" alt="" /></a>
+                </td>
+                <td>$10,000</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Guernica</td>
+                <td>Pablo Picasso</td>
+                <td>
+                  <a href=""><img src="assets/pop-paintings2.jpg" alt="" /></a>
+                </td>
+                <td>$9,000</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>The Embarkation of the Queen of sheba</td>
+                <td>Claude lorrain</td>
+                <td>
+                  <a href=""><img src="assets/pop-paintings3.jpg" alt="" /></a>
+                </td>
+                <td>$13,000</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Las Damas Romans</td>
+                <td>Juan Luna</td>
+                <td>
+                  <a href=""><img src="assets/pop-paintings4.jpg" alt="" /></a>
+                </td>
+                <td>$18,000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="history">
+          <h1>History</h1>
+          <div class="container">
+            <div class="details">
+              <div class="detail-desc">
+                <div class="hist-desc">
+                  <h3>Long Discuss</h3>
+                  <p>Apperance</p>
+                </div>
+                <div class="hist-desc">
+                  <h3>24 September, 2014</h3>
+                  <p>2:00PM - 6:00Pm</p>
+                </div>
+                <div class="user-img">
+                  <img src="assets/header.jpg" alt="" />
+                </div>
+                <div class="hist-desc">
+                  <h3>25 September, 2014</h3>
+                  <p>2:00PM - 6:00Pm</p>
+                </div>
+                <div class="right-arrow">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+              <div class="detail-desc">
+                <div class="hist-desc">
+                  <h3>Long Discuss</h3>
+                  <p>Apperance</p>
+                </div>
+                <div class="hist-desc">
+                  <h3>26 September, 2014</h3>
+                  <p>2:00PM - 6:00Pm</p>
+                </div>
+                <div class="user-img">
+                  <img src="assets/header.jpg" alt="" />
+                </div>
+                <div class="hist-desc">
+                  <h3>27 September, 2014</h3>
+                  <p>2:00PM - 6:00Pm</p>
+                </div>
+                <div class="right-arrow">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+              <div class="detail-desc">
+                <div class="hist-desc">
+                  <h3>Long Discuss</h3>
+                  <p>Apperance</p>
+                </div>
+                <div class="hist-desc">
+                  <h3>28 September, 2014</h3>
+                  <p>2:00PM - 6:00Pm</p>
+                </div>
+                <div class="user-img">
+                  <img src="assets/header.jpg" alt="" />
+                </div>
+                <div class="hist-desc">
+                  <h3>29 September, 2014</h3>
+                  <p>2:00PM - 6:00Pm</p>
+                </div>
+                <div class="right-arrow">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+              <div class="detail-desc">
+                <div class="hist-desc">
+                  <h3>Long Discuss</h3>
+                  <p>Apperance</p>
+                </div>
+                <div class="hist-desc">
+                  <h3>30 September, 2014</h3>
+                  <p>2:00PM - 6:00Pm</p>
+                </div>
+                <div class="user-img">
+                  <img src="assets/header.jpg" alt="" />
+                </div>
+                <div class="hist-desc">
+                  <h3>01 October, 2014</h3>
+                  <p>2:00PM - 6:00Pm</p>
+                </div>
+                <div class="right-arrow">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+              <div class="detail-desc">
+                <div class="hist-desc">
+                  <h3>Long Discuss</h3>
+                  <p>Apperance</p>
+                </div>
+                <div class="hist-desc">
+                  <h3>02 October, 2014</h3>
+                  <p>2:00PM - 6:00Pm</p>
+                </div>
+                <div class="user-img">
+                  <img src="assets/header.jpg" alt="" />
+                </div>
+                <div class="hist-desc">
+                  <h3>03 October, 2014</h3>
+                  <p>2:00PM - 6:00Pm</p>
+                </div>
+                <div class="right-arrow">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="first-section">
+        <div class="studio-desc">
+          <h3>Artstudio</h3>
+          <p>
+            OurStudio is a digital agency UI/UX Design and Website DevelopMent
+            located in Ohio, United States of America
+          </p>
+          <span>© Copyright Satyam Studio</span>
+        </div>
+        <div class="studio-service">
+          <h3>Services</h3>
+          <ul>
+            <li><a>Illustration</a></li>
+            <li><a>Mobile Design</a></li>
+            <li><a>Motion Graphic</a></li>
+            <li><a>Web Design</a></li>
+            <li><a>Development</a></li>
+            <li><a>SEO</a></li>
+          </ul>
+        </div>
+        <div class="company">
+          <h3>Company</h3>
+          <ul>
+            <li><a>Service</a></li>
+            <li><a>Features</a></li>
+            <li><a>Our Team</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="second-section">
+        <span>© Copyright Satyam Studio</span>
+        <ul>
+          <li>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>8819 Ohio St, South Gate,
+              CA 90280
+            </p>
+          </li>
+          <li><i class="fa-solid fa-envelope"></i>Ourstudio@Hello.com</li>
+          <li><i class="fa-solid fa-phone"></i>+1 389-688-3295</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

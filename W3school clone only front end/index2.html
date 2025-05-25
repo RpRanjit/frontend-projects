@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3Schools Online Web Tutorial</title>
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-left-side">
+        <a href="#" id="logo">
+          <div class="w3schools-logo">
+            <img src="/assets/W3.png" alt="W3Schools" />
+          </div>
+        </a>
+          <a href="#menu" id="menu"
+          >Menu<i class="fa-solid fa-caret-down"></i
+        ></a>
+        <a href="#tutorials" id="tutorials"
+          >Tutorials<i class="fa-solid fa-caret-down"></i
+        ></a>
+        <a href="#C" id="exercise">Exercise<i class="fa-solid fa-caret-down"></i></a>
+        <a href="#certificates" id="certificates"
+          >Certificates<i class="fa-solid fa-caret-down"></i
+        ></a>
+        <a href="#services" id="services">Services<i class="fa-solid fa-caret-down"></i></a>
+      </div>
+
+      <div class="header-middle">
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="toggle-color-mode">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </div>
+      </div>
+
+      <div class="header-right-side">
+        <a href="#spaces" id="spaces"><i class="fa-solid fa-code"></i>Spaces</a>
+        <a href="#for_Teachers" id="for_teachers"
+          ><i class="fa-solid fa-graduation-cap"></i>For Teachers</a
+        >
+        <a href="#get_certified" id="get_certified"
+          ><i class="fa-solid fa-cart-shopping"></i>Get Certified</a
+        >
+        <div class="buttons">
+          <button class="sign-up">Sign Up</button>
+          <button class="log-in">Log in</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="monolog">
+          <h1>Learn to Code</h1>
+          <p>With the world's largest web developer site.</p>
+        </div>
+        <div class="home-search">
+          <input type="text" placeholder="Search our tutorial, e.g. HTML" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <p><span>Not Sure Where To Begin?</span></p>
+      </section>
+      <!-- for html only -->
+      <section class="html">
+        <div class="html-intro" id="intro">
+          <h1>HTML</h1>
+          <p>The language for building web pages</p>
+            <button class="learn" style="background-color: #04aa6d; color: white">
+              Learn HTML
+            </button>
+            <button
+            class="tutorial" 
+            style="background-color: #fff4a3; color: black"
+            >
+            Video Tutorial
+          </button>
+          <button
+          class="reference"
+          style="background-color: #282a35; color: white"
+          >
+          HTML Reference
+        </button>
+        <button
+        class="certified"
+        style="background-color: #ffc0c7; color: black"
+        >
+        Get Certified
+      </button>
+        </div>
+        <div class="html-example" id="examples">
+          <h2>HTML Example:</h2>
+          <div class="code-example">
+            <p>
+              &lt;!DOCTYPE html&gt;<br />
+              &lt;html&gt;<br />
+              &lt;head&gt;<br />
+              &nbsp;&nbsp;&lt;title&gt;My Page&lt;/title&gt;<br />
+              &lt;/head&gt;<br />
+              &lt;body&gt;<br />
+              &nbsp;&nbsp;&lt;h1&gt;Hello, world!&lt;/h1&gt;<br />
+              &lt;/body&gt;<br />
+              &lt;/html&gt;
+            </p>
+          </div>
+          <button class="try-it-yourself">Try it Yourself</button>
+        </div>
+      </section>
+      <!-- for css only -->
+      <section class="css">
+        <div class="css-intro">
+          <h1>CSS</h1>
+          <p>The language for Styling web pages</p>
+          <button class="learn" style="background-color: #04aa6d; color: white">
+            Learn CSS
+          </button>
+          <button
+            class="reference"
+            style="background-color: #282a35; color: white"
+          >
+            CSS Reference
+          </button>
+          <button
+            class="certified"
+            style="background-color: #ffc0c7; color: black"
+          >
+            Get Certified
+          </button>
+        </div>
+        <div class="css-example" id="examples">
+          <h2>CSS Example:</h2>
+          <div class="code-example">
+            <p>
+              body { <br />
+              background-color: lightblue;<br />
+              }<br /><br />
+              h1 { <br />
+              color: white;<br />
+              text-align: center;<br />
+              }<br />
+              p {<br />
+              font-family: verdana;<br />
+              }
+            </p>
+          </div>
+          <button class="try-it-yourself">Try it Yourself</button>
+        </div>
+      </section>
+      <!-- for js only  -->
+      <section class="js">
+        <div class="js-intro">
+          <h1>JavaScript</h1>
+          <p>The language for programming web pages</p>
+          <button class="learn" style="background-color: #04aa6d; color: white">
+            Learn JavaScript
+          </button>
+          <button
+            class="reference"
+            style="background-color: #e7e7e9; color: rgb(14, 13, 13)"
+          >
+            JavaScript Reference
+          </button>
+          <button
+            class="certified"
+            style="background-color: #ffc0c7; color: black"
+          >
+            Get Certified
+          </button>
+        </div>
+        <div class="js-example" id="examples">
+          <h2>JavaScript Example:</h2>
+          <div class="code-example">
+            <p>
+              &lt;button onclick="myFunction()"&gt;Click Me!<br />
+              &lt;/button&gt;<br /><br />
+              &lt;script&gt;<br />
+              function myFunction() { let x = document.getElementById("demo");
+              x.style.fontSize = "25px"; x.style.color = "red"; }
+              &lt;/script&gt;
+            </p>
+          </div>
+          <button class="try-it-yourself">Try it Yourself</button>
+        </div>
+      </section>
+      <!-- for python only -->
+      <section class="python">
+        <div class="python-intro">
+          <h1>Python</h1>
+          <p>A popular programming language</p>
+          <button class="learn" style="background-color: #04aa6d; color: white">
+            Learn Python
+          </button>
+          <button
+            class="reference"
+            style="background-color: #282a35; color: rgb(14, 13, 13)"
+          >
+            Python Reference
+          </button>
+          <button
+            class="certified"
+            style="background-color: #ffc0c7; color: black"
+          >
+            Get Certified
+          </button>
+        </div>
+        <div class="python-example" id="examples">
+          <h2>Python Example:</h2>
+          <div class="code-example">
+            <p>
+              if 5 > 2: <br />
+              print("Five is greater than two1");
+              <br /><br /><br /><br /><br /><br />
+            </p>
+          </div>
+          <button class="try-it-yourself">Try it Yourself</button>
+        </div>
+      </section>
+      <!-- for sql only  -->
+      <section class="sql">
+        <div class="sql-intro">
+          <h1>SQL</h1>
+          <p>A language for accessing databases</p>
+          <button class="learn" style="background-color: #04aa6d; color: white">
+            Learn SQL
+          </button>
+          <button
+            class="reference"
+            style="background-color: #282a35; color: rgb(14, 13, 13)"
+          >
+            SQL Reference
+          </button>
+          <button
+            class="certified"
+            style="background-color: #ffc0c7; color: black"
+          >
+            Get Certified
+          </button>
+        </div>
+        <div class="sql-example" id="examples">
+          <h2>SQL Example:</h2>
+          <div class="code-example">
+            <p>
+              SELECT * FROM Customers <br />
+              WHERE Country='Mesico';<br /><br /><br /><br /><br /><br />
+            </p>
+          </div>
+          <button class="try-it-yourself">Try it Yourself</button>
+        </div>
+      </section>
+
+      <!-- for other languages -->
+      <section>
+        <div class="famous-lang">
+          <div
+            id="prog-lang"
+            class="php"
+            style="background-color: rgb(228, 188, 195)"
+          >
+            <h2>PHP</h2>
+            <p style="color: #676b83">A web server programming language</p>
+            <button>Learn PHP</button>
+          </div>
+          <div
+            id="prog-lang"
+            class="jQuery"
+            style="background-color: rgb(209, 199, 108)"
+          >
+            <h2>jQuery</h2>
+            <p style="color: #464857">A JS library for developing web pages</p>
+            <button>Learn jQuery</button>
+          </div>
+          <div
+            id="prog-lang"
+            class="java"
+            style="background-color: rgb(255, 232, 236)"
+          >
+            <h2>Java</h2>
+            <p style="color: #383946">A JS library for developing web pages</p>
+            <button>Learn jQuery</button>
+          </div>
+          <div
+            id="prog-lang"
+            class="c++"
+            style="background-color: rgb(243, 236, 212)"
+          >
+            <h2>C++</h2>
+            <p style="color: #2d2d38">A JS library for developing web pages</p>
+            <button>Learn jQuery</button>
+          </div>
+          <div
+            id="prog-lang"
+            class="w3.css"
+            style="background-color: rgb(146, 201, 198)"
+          >
+            <h2>W3.CSS</h2>
+            <p style="color: #202129">A JS library for developing web pages</p>
+            <button>Learn jQuery</button>
+          </div>
+          <div
+            id="prog-lang"
+            class="bootstrap"
+            style="background-color: rgb(219, 188, 193)"
+          >
+            <h2>Bootstrap</h2>
+            <p>A JS library for developing web pages</p>
+            <button>Learn jQuery</button>
+          </div>
+          <div class="other-lang">
+            <div id="spec-lang" style="background-color: pink">
+              <h2>C</h2>
+            </div>
+            <div id="spec-lang" style="background-color: rgb(212, 207, 127)">
+              <h2>C#</h2>
+            </div>
+
+            <div class="spec1-lang">
+              <div id="spec-lang1" style="background-color: rgb(216, 216, 212)">
+                <h3>R</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(183, 202, 198)">
+                <h3>Kotlin</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(140, 206, 192)">
+                <h3>Node.js</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: pink">
+                <h3>React</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(212, 207, 127)">
+                <h3>JSON</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(216, 216, 212)">
+                <h3>Vue</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(183, 202, 198)">
+                <h3>RWD</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(140, 206, 192)">
+                <h3>Graphics</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: pink">
+                <h3>Sass</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(212, 207, 127)">
+                <h3>Icons</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(216, 216, 212)">
+                <h3>Raspberry Pi</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(183, 202, 198)">
+                <h3>Cyber Security</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(140, 206, 192)">
+                <h3>SVG</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: pink">
+                <h3>Canvas</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(212, 207, 127)">
+                <h3>Matplotlib</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(216, 216, 212)">
+                <h3>NumPy</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(183, 202, 198)">
+                <h3>Colors</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(140, 206, 192)">
+                <h3>Git</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: pink">
+                <h3>ASP</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(212, 207, 127)">
+                <h3>AngularJS</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(216, 216, 212)">
+                <h3>Pandas</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(183, 202, 198)">
+                <h3>SciPy</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(140, 206, 192)">
+                <h3>TypeScript</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: pink">
+                <h3>Django</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(212, 207, 127)">
+                <h3>AppML</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(216, 216, 212)">
+                <h3>Go</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(183, 202, 198)">
+                <h3>Dara Science</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(140, 206, 192)">
+                <h3>PostgreSQL</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: pink">
+                <h3>MongoDB</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(212, 207, 127)">
+                <h3>Statistics</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(216, 216, 212)">
+                <h3>MySQL</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(183, 202, 198)">
+                <h3>XML</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(140, 206, 192)">
+                <h3>HowTo</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: pink">
+                <h3>Code Game</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(212, 207, 127)">
+                <h3>Spaces</h3>
+              </div>
+              <div id="spec-lang1" style="background-color: rgb(216, 216, 212)">
+                <h3>Typing Speed</h3>
+              </div>
+            </div>
+
+            <div id="spec-lang" style="background-color: rgb(154, 206, 207)">
+              <h2>Excel</h2>
+            </div>
+            <div id="spec-lang" style="background-color: rgb(211, 204, 111)">
+              <h2>DSA - Data Structures and Algorithms</h2>
+            </div>
+            <div id="spec-lang" style="background-color: rgb(199, 164, 202)">
+              <h2>Machine Learning</h2>
+            </div>
+            <div id="spec-lang" style="background-color: rgb(209, 187, 204)">
+              <h2>Artificial Intelligence</h2>
+            </div>
+            <div id="spec-lang" style="background-color: rgb(191, 214, 212)">
+              <h2>Introduction tp programming</h2>
+            </div>
+            <div id="spec-lang" style="background-color: rgb(164, 208, 216)">
+              <h2>Bash</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- for sign-up/log-in images -->
+      <section>
+        <div class="sign-log-img">
+          <h1>Log in / Sign Up</h1>
+          <p>
+            Create a free account to track your progress, and get access to more
+            features and learning materials.
+          </p>
+          <img src="/assets/signup-login.png" alt="" class="images" />
+          <button class="img-btn">Sign Up for Free</button>
+        </div>
+      </section>
+      <!-- for code editor -->
+      <section>
+        <div class="code-editor">
+          <h1>Code Editor</h1>
+          <p>
+            With our online code editor, you can edit code and view result in
+            the browser
+          </p>
+          <iframe
+            class="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/it1rTvBcfRg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <div class="editor-btn">
+            <button class="video-btn" style="background-color: #04aa6d; color: white;">Try Frontend Editor (TML/CSS/JS)</button>
+            <button class="video-btn" style="background-color: #fff4a3; color: black;">
+              Try Backend Editor (Python/PHP/Java/C..)
+            </button>
+          </div>
+        </div>
+      </section>
+<!-- for spaces -->
+<section>
+  <div class="for-spaces">
+    <h1>W3Schools Spaces</h1>
+    <p>
+      If you want to create your own website, check out <span>W3Schools Spaces.</span>
+    </p>
+    <p>It is free to use, and does not require any setup:</p>
+    <iframe
+      class="video"
+      width="660"
+      height="345"
+      src="https://www.youtube.com/embed/it1rTvBcfRg"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    >
+    </iframe>
+    <button>Learn More</button>
+  </div>
+</section>
+
+<!-- for plus users -->
+      <section>
+        <div class="plus-users">
+          <h1>Become a Plus User</h1>
+          <p>
+            And unlock powerful features:
+          </p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Browse W3Schools without ads</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Build and host Websites</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Ultimate challenges</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Ultimate practice tests</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Get extra credits</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Priority Support</p>
+            </li>
+          </ul>
+          <button class="more-btn">Learn More</button>
+        </div>
+      </section>
+<hr>
+      <!-- for teachers -->
+
+      <section>
+        <div class="for-teacher">
+          <div class="left-side">
+            <h1>For Teachers</h1>
+            <p>
+              Streamline your teaching:
+          </p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Mangage your classroom</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Ready-to-use lrearning materials</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Customize stude plans</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Track student progress</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Interactive coding challenges</p>
+            </li>
+          </ul>
+          <button class="more-btn">Learn More</button>
+        </div>
+        <div class="right-side">
+          <img src="/assets/for-teachers.webp" alt="">
+        </div>
+        </div>
+      </section>
+
+      <!-- color picker -->
+       <section>
+        <div class="color-picker">
+          <h1>Color Picker</h1>
+          <p>W3Echools' famous color picker:</p>
+          <img src="/assets/colorpicker.webp" alt="">
+        </div>
+       </section>
+
+       <!-- for code games -->
+       <section>
+        <div class="code-games">
+          <h1>Code Game</h1>
+          <p>Help the Lynx collect pine cones!</p>
+          <img src="/assets/code-game.webp" alt="">
+          <button>Play Game</button>
+        </div>
+       </section>
+
+       <!-- for exercise and quizes -->
+        <section>
+          <div class="exe-quz">
+            <h1>Exercises and Quizes</h1>
+            <p>Test your skills!</p>
+            <div class="exqz">
+              <h2 style="background-color:#04aa6d; color: white;">Exercise</h2>
+              <h2 style="background-color: #fff4a3;">Quizes</h2>
+            </div>
+          </div>
+        </section>
+
+        <!-- for beb templates -->
+        <section>
+          <div class="web-tmp">
+            <h1>Web Templates</h1>
+            <p>Browse our selection of free responsive HTML Templates</p>
+            <img src="/assets/w3css_templates.webp" alt="">
+            <button>Browse Templates</button>
+          </div>
+         </section>
+
+         <!-- for career certified -->
+          <section>
+            <div class="career">
+              <h1>Kisckstart your career</h1>
+              <p>Get certified by completing a course</p>
+              <button>Get started</button>
+            </div>
+          </section>
+
+          <!-- for slide section -->
+           <section>
+            <div class="how-to">
+              <h1>How To Section</h1>
+              <p>Code snippets for HTML,CSS and JavaScript</p>
+              <span>For example, how to create slideshow:</span>
+              <img src="/assets/slideshow.png" alt="">
+              <button>Learn How To</button>
+            </div>
+           </section>
+    </main>
+<!-- for footer part -->
+    <footer>
+      <div class="first-part">
+        <img src="/assets/W3.png" alt="">
+        <ul>
+          <li id="features">
+            <h2>PLUS</h2>
+          </li>
+          <li id="features">
+            <h2>SPACES</h2>
+          </li>
+          <li id="features">
+            <h2>GET CERTIFIED</h2>
+          </li>
+          <li id="features">
+            <h2>FOR TEACHERS</h2>
+          </li>
+          <li id="features">
+            <h2>FOR BUSINESS</h2>
+          </li>
+          <li id="features">
+            <h2>CONTACT US</h2>
+          </li>
+        </ul>
+      </div>
+      <div class="second-part">
+        <div class="tutorial" id="second">
+          <h2>
+            Top Tutorials
+          </h2>
+          <ul>
+            <li><p>HTML Tutorial</p></li>
+            <li><p>CSS Tutorial</p></li>
+            <li><p>JavaScript Tutorial</p></li>
+            <li><p>How To Tutorial</p></li>
+            <li><p>SQL Tutorial</p></li>
+            <li><p>Python Tutorial</p></li>
+            <li><p>W3.CSS Tutorial</p></li>
+            <li><p>Bootstrap Tutorial</p></li>
+            <li><p>PHP Tutorial</p></li>
+            <li><p>Java Tutorial</p></li>
+            <li><p>C++ Tutorial</p></li>
+            <li><p>jQuery Tutorial</p></li>
+          </ul>
+        </div>
+        <div class="reference" id="second">
+          <h2>
+            Top References
+          </h2>
+          <ul>
+            <li><p>HTML References</p></li>
+            <li><p>CSS References</p></li>
+            <li><p>JavaScript References</p></li>
+            <li><p>How To References</p></li>
+            <li><p>SQL References</p></li>
+            <li><p>Python References</p></li>
+            <li><p>W3.CSS References</p></li>
+            <li><p>Bootstrap References</p></li>
+            <li><p>PHP References</p></li>
+            <li><p>Java References</p></li>
+            <li><p>C++ References</p></li>
+            <li><p>jQuery References</p></li>
+          </ul>
+        </div>
+        <div class="examples" id="second">
+          <h2>
+            Top Examples
+          </h2>
+          <ul>
+            <li><p>HTML Examples</p></li>
+            <li><p>CSS Examples</p></li>
+            <li><p>JavaScript Examples</p></li>
+            <li><p>How To Examples</p></li>
+            <li><p>SQL Examples</p></li>
+            <li><p>Python Examples</p></li>
+            <li><p>W3.CSS Examples</p></li>
+            <li><p>Bootstrap Examples</p></li>
+            <li><p>PHP Examples</p></li>
+            <li><p>Java Examples</p></li>
+            <li><p>C++ Examples</p></li>
+            <li><p>jQuery Examples</p></li>
+          </ul>
+        </div>
+        <div class="certified" id="second">
+          <h2>
+            Get Certified
+          </h2>
+          <ul>
+            <li><p>HTML Certified</p></li>
+            <li><p>CSS Certified</p></li>
+            <li><p>JavaScript Certified</p></li>
+            <li><p>How To Certified</p></li>
+            <li><p>SQL Certified</p></li>
+            <li><p>Python Certified</p></li>
+            <li><p>W3.CSS Certified</p></li>
+            <li><p>Bootstrap Certified</p></li>
+            <li><p>PHP Certified</p></li>
+            <li><p>Java Certified</p></li>
+            <li><p>C++ Certified</p></li>
+            <li><p>jQuery Certified</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="third-part">
+        <div class="media">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <div class="desc">
+            <h3>FORUM</h3>
+            <h3>ABOUT</h3>
+            <h3>ACADEMY</h3>
+          </div>
+        </div>
+        <p>
+          W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted <span>our terms of use</span>,<span>cookie and privacy policy.</span> 
+        </p><br>
+        <p><span>Copyright 1999-2025</span> by Refsnes Data. All Right Reserved. <span>W3School is powered by W3.CSS</span></p>
+      </div>
+    </footer>
+  </body>
+</html>

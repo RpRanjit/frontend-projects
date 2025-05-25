@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-conatiner">
+        <nav class="nav-bar">
+          <ul class="menu">
+            <li>
+              <a href="#" class="logo"
+                ><img src="assets/logo.png" alt="Logo"
+              /></a>
+            </li>
+            <li class="hiddenOnMobile"><a href="#" id="index">Index</a></li>
+            <li class="hiddenOnMobile"><a href="#" id="work">Work</a></li>
+            <li class="hiddenOnMobile"><a href="#" id="about">About</a></li>
+            <li class="hiddenOnMobile">
+              <a href="#" id="gallery"
+                >Gallery<i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="menu-bar" onclick="showSideBar()"
+                ><i class="fa-solid fa-bars"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="sidebar">
+            <li>
+              <a href="" class="menu-cross-bar" onclick="closeSideBar()"
+                ><i class="fa-solid fa-close"></i
+              ></a>
+            </li>
+            <li><a href="#" id="index">Index</a></li>
+            <li><a href="#" id="work">Work</a></li>
+            <li><a href="#" id="about">About</a></li>
+            <li><a href="#" id="gallery">Gallery</a></li>
+          </ul>
+        </nav>
+
+        <div class="description">
+          <h1>Bingkow</h1>
+          <p>Unnerving gaze leading into foggy, mysterious temple.</p>
+        </div>
+        <h2>Discover the truth</h2>
+      </div>
+    </header>
+
+    <section>
+      <div class="intro-desrp">
+        <div class="details">
+          <h2>Into the Forest's Gaze</h2>
+          <p>
+            The grooup of hikers cautiously making their way deeper into the
+            unknown, unaware of what lies ahead and.......
+          </p>
+          <span
+            >To Contnue the tale, hover the image<i
+              class="fa-solid fa-arrow-right"
+            ></i
+          ></span>
+        </div>
+        <div class="forest-pic">
+          <div class="first-image">
+            <img src="assets/image1.jpg" alt="First image" />
+            <div class="image-content">
+              <h3>Details</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                adipisci ab. Hic enim atque repudiandae sapiente qui, illo
+                corporis culpa maxime pariatur tenetur, minima laudantium, quo
+                eveniet sunt odit praesentium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea repudiandae magnam tempora ducimus. Perferendis ut soluta dolorum in officiis.
+              </p>
+            </div>
+          </div>
+          <div class="second-image">
+            <img src="assets/image2.jpg" alt="Second image" />
+            <div class="image-content">
+              <h3>Details</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                adipisci ab. Hic enim atque repudiandae sapiente qui, illo
+                corporis culpa maxime pariatur tenetur, minima laudantium, quo
+                eveniet sunt odit praesentium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem, consequuntur ratione omnis laboriosam 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="for-gate">
+        <div class="gate-conatiner">
+          <h1>Mysterious Gate</h1>
+          <div class="gate-image">
+            <img src="assets/image4.jpg" alt="">
+            <div class="fog-image">
+              <div class="fog first">
+                <!-- <img src="assets/fog1.png" alt=""> -->
+              </div>
+              <div class=" fog second">
+                <!-- <img src="assets/fog2.png" alt=""> -->
+              </div>
+            </div>
+            <div class="location">
+              <span>Mysterious Erie torii Gate<i class="fa-solid fa-angle-down"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="fifth-section">
+        <h1>After Mysterious Gate</h1>
+        <div class="ghost-img">
+          <div class="ghost-eg">
+            <div class="ghost1">
+              <img src="assets/image5.jpg" alt="">
+              <h3>Aokighara</h3>
+              <p>Group of Hikers met Aokighara out of nowhere during their tale.</p>
+            </div>
+            <div class="ghost2">
+              <img src="assets/image6.jpg" alt="">
+              <h3>Aokighara</h3>
+              <p>Group of Hikers met Aokighara out of nowhere during their tale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="haunted-house">
+          <img src="assets/bgimage3.jpg" alt="">
+          <div class="desc">
+            <p> After encountering ghostly apparitions, they arrive at a fog-covered house, where a dark, clocked figure stands ominously.The air is thick with dread as they realise they've crossed into a realm where the living and dead converge, and the house beckons them inide. Their next move could seal their fate.</p>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="conseq">
+        <div class="ghosts-img">
+          <div class="image1">
+            <img src="assets/image7.jpg" alt="">
+            <p>The hikers, now fearful, reaalise they've entered a realm of the dead, with ghosts silently watching their every move.</p>
+          </div>
+          <div class="image2">
+            <img src="assets/image8.jpg" alt="">
+            <p>They took one of them from hiker group.</p>
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="hiker-details">
+<h1>Hikers</h1>
+<div class="detail-table">
+  <table>
+    <tr>
+      <th>S.N</th>
+      <th>Names</th>
+      <th>Adventure</th>
+      <th>Details</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>James</td>
+      <td>
+          <img src="assets/home.jpg" alt="">
+          <img src="assets/image6.jpg" alt="">
+        </td>
+      <td>
+        Arcylic
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Benath</td>
+      <td>
+        <img src="assets/house.jpg" alt="">
+      </td>
+      <td>Arcylic</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Aghikara</td>
+      <td>
+        <img src="assets/bgimage3.jpg" alt="">
+      </td>
+      <td>Arcylic</td>
+    </tr>
+  </table>
+</div>
+      </div>
+    </section>
+
+    <section>
+  <div class="evidence">
+    <h1>Evidence</h1>
+    <div class="forest-img">
+      <div class="row1">
+      <div class="evd evd-1">
+        <img src="assets/yeti.jpg" alt="">
+        <span>1600s</span>
+        <p>A group of youth encounters a Huge Skinwalker</p>
+        <button>Read More</button>
+      </div>
+        <div class="evd evd-2">
+          <img src="assets/temple.jpg" alt="">
+          <span>1700s</span>
+          <p>Temple become abanded after a group Disappear.</p>
+          <button>Read More</button>
+        </div>
+        <div class="evd evd-3">
+          <img src="assets/house.jpg" alt="">
+          <span>1800s</span>
+          <p>Some curious group encountered abnormal entities.</p>
+          <button>Read More</button>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="evd evd-4">
+          <img src="assets/ghost.jpg" alt="">
+          <span>1900s</span>
+          <p>Many people disappeared. Hence the myth Continues.....</p>
+          <button>Read More</button>
+        </div>
+        <div class="evd evd-5">
+          <img src="assets/image7.jpg" alt="">
+          <span>2000s</span>
+          <p>Some GenZ Encounter bunch of entities with their device.</p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="login-desc">
+    <h1>To continue, please log in.</h1>
+    <p>As the hikers reach the temple, the doors creak open to darkness. Suddenly, one of the them disappears, and a hunting voice from the shadows whispers. "This was never the end."</p>
+  </div>
+</section>
+
+<section>
+  <div class="images-form">
+    <div class="login">
+      <hr>
+      <h3>Account</h3>
+      <h1>Log in</h1>
+      <p>To access your account</p>
+      <div class="empass">
+        <label for="email">Email address</label>
+        <input type="email" placeholder="Enter Your email">
+        <label for="password">Password
+          <span id="togglePassword">
+            <i class="fa-solid fa-eye" style="display: none;"></i>
+            <i class="fa-solid fa-eye-slash"></i>
+            <span class="toggle-text">Hide</span>
+          </span>
+        </label>
+        <input type="password" id="passwordInput" placeholder="Password">
+        <p>I forget my password</p>
+        <button>Log in</button>
+      </div>
+      <div class="signup">
+        <p>Don't have an account</p>
+        <button>Create an account</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <hr>
+  <div class="contents">
+    <div class="about">
+      <div class="logo">
+        <img src="assets/logo.png" alt="">
+        <h2>Whop</h2>
+      </div>
+      <p>The #1 prefered way to distribute and manage access to your community, software or digital product.</p>
+      <div class="icons">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    </div>
+    <div class="right-side">
+      <div class="links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="">Marketplace</a></li>
+          <li><a href="">Dashboard</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </div>
+      <div class="resources">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="">Guides</a></li>
+          <li><a href="">Support Center</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </div>
+      <div class="developers">
+        <h3>Developers</h3>
+        <ul>
+          <li><a href="">Guides</a></li>
+          <li><a href="">API Reference</a></li>
+        </ul>
+      </div>
+      <div class="company">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="">Changelog</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

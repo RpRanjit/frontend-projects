@@ -1,0 +1,1344 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #0E221E;
+    --secondaer-color: #71CFE0;
+    --backgroung-color: #031103;
+    --font-family: Caveat;
+    --color1: white;
+    --color2: rgb(141, 177, 132);
+}
+body{
+    background-color: var(--backgroung-color);
+}
+.nav-conatiner{
+    position: relative;
+    background-image: url(assets/home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 37rem;
+    overflow: hidden;
+}
+
+.nav-bar{
+    background-color: rgba( 0, 0, 0, 0.1);
+    backdrop-filter: blur(15rem);
+    margin-top: 1rem;
+    border: none;
+    width: 100%;
+    border-radius: 1rem;
+    position: fixed;
+    z-index: 1;
+}
+.nav-bar .menu{
+    display: flex;
+  flex-direction: row;
+  justify-content:right;
+  align-items: center;
+  list-style: none;
+}
+.nav-bar .menu li a{
+    text-decoration: none;
+    margin-top: 0;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    color: var(--color1);
+    border-radius: 2rem;
+}
+.nav-bar .menu li a:not(.logo):hover{
+    background-color: rgb(121, 163, 121);
+}
+.nav-bar .menu li:first-child{
+   margin-right: auto;
+}
+.nav-bar .menu .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar .menu a img{
+    height: 1rem;
+    width: 100%;
+    max-width: 2.2rem;
+  display: block;
+}
+.menu li #gallery i{
+padding-left: 0.5rem;
+font-size: 1rem;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 20rem;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px);
+  box-shadow: 1.8rem 0 0.8rem rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.sidebar li{
+   width: 100%;
+   list-style: none;
+}
+.sidebar li a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    color: var(--color1);
+}
+.sidebar li a:hover{
+color: var(--color2);
+}
+.menu-bar{
+    display: none;
+}
+
+
+/* for home decription */
+.nav-conatiner .description
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 24%;
+    left: 12%;
+    color: var(--color2);
+} 
+.description h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11rem;
+    font-weight: 100;
+}
+.description p{
+    font-size: 1.5rem;
+}
+.nav-conatiner h2{
+position: absolute;
+bottom: 1rem;
+left: 43%;
+color: var(--color1);
+text-align: center;
+justify-content: center;
+padding: 0.8rem 1rem;
+background-color: var(--color2);
+border-radius: 1rem;
+}
+.nav-conatiner h2:hover{
+    background:linear-gradient(90deg, #0E221E, green);
+    cursor: pointer;
+}
+
+.intro-desrp{
+    display: flex;
+    margin: 3rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.intro-desrp .details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 20rem;
+    align-items: left;
+    justify-content: center;
+}
+.details h2{
+    font-size: 2rem;
+    color: var(--color1);
+}
+.details p{
+    color: var(--color2);
+    margin-top: 2rem;
+}
+.details span{
+    margin-top: 2rem;
+    color: black;
+    background-color: var(--color1);
+    font-size: 0.8rem;
+    width: fit-content;
+    padding:0.3rem 0.7rem;
+}
+.details span i{
+    font-size: 0.7rem;
+    padding-left: 0.7rem;
+}
+.details span:hover{
+    background: linear-gradient(360deg, #031103, white);
+    cursor: pointer;
+}
+.intro-desrp .forest-pic{
+padding-left: 3rem;
+}
+.forest-pic{
+    display: grid;
+    grid-template-columns: 23rem 23rem;
+    grid-gap: 1rem;
+}
+.forest-pic img{
+    width: 18rem;
+    height: 30rem;
+}
+.forest-pic .first-image,.second-image{
+    position: relative;
+}
+.forest-pic .image-content{
+    width: 18rem;
+    position: absolute;
+    top: 0rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background: rgba( 0, 0, 0, 0.8);
+    transition: 0.6s;
+}
+.forest-pic .image-content:hover{
+    opacity: 1; cursor:pointer;
+}
+.forest-pic .image-content h3{
+    font-size: 1.5rem;
+    color: var(--color1);
+}
+.image-content p{
+    color: rgb(179, 204, 198);
+    width: 100%;
+    padding: 2rem 1.5rem;
+    font-size: 1rem;
+}
+
+/* for mysterious gate */
+.for-gate{
+    margin: 4rem 3rem;
+}
+.gate-conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+     background: rgba(11, 24, 3, 0.1);
+     backdrop-filter: blur(10px);
+}
+.gate-conatiner h1{
+    font-size: 2.3rem;
+    color: var(--color1);
+}
+.gate-conatiner .gate-image{
+    position: relative;
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.3rem 0.5rem 0.5rem 1.5rem #061804;
+
+    border-radius: 1rem;
+}
+.gate-image img{
+    color: rgba( 0, 0, 0, 0.1);
+    width: 100%;
+    min-width: 70rem;
+    height: 42rem;
+    position:relative;
+    border-radius: 2rem;
+    opacity: 0.7;
+}
+.gate-image .location{
+position: absolute;
+bottom :2.5rem;
+background-color: var(--color2);
+font-size: 1.3rem;
+padding: 0.7rem 1rem;
+border-radius: 1rem;
+}
+.gate-image .location:hover{
+    background: linear-gradient(90deg, #0a290a, #639c63);
+    cursor: pointer;
+}
+.gate-image .location span i{
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+}
+ .fog-image .fog {
+    position: absolute;
+    width: 100%;
+    min-width: 70rem;
+}
+
+.fog-image .first {
+    background-image: url('assets/fog1.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    animation: fogAnim1 100s linear infinite;
+    height: 15rem;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.fog-image .second {
+    background-image: url('assets/fog2.png');
+    animation: fogAnim 30s linear infinite;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    left: 0;
+    height: 30rem;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+/* fifith section */
+.fifth-section{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.fifth-section h1{
+    font-size: 3rem;
+    color: var(--color1);
+}
+.fifth-section .ghost-img{
+    background-image: url(assets/bgimage2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 70rem;
+    margin: 2rem 0;
+    position: relative;
+    opacity: 0.7;
+    height: 35rem;
+}
+.ghost-eg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.ghost-eg .ghost1, .ghost2{
+    background-color: rgba(134, 131, 131, 0.3); 
+    position: absolute;
+    width: 100%;
+    max-width: 17rem;
+    top: 22%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.2rem;
+    border-radius: 1rem;
+}
+.ghost-eg .ghost1{
+    left: 9%;
+}
+.ghost-eg .ghost2{
+    right: 9%;
+}
+.ghost-eg .ghost1 img, .ghost-eg .ghost2 img{
+    width: 100%;
+    opacity: 1;
+max-width: 15rem;
+height: 13rem;
+align-items: center;
+border: 2px solid gray;
+border-radius: 1rem;
+box-shadow: 0.05rem 0.08rem 0.5rem 0.2rem #757373;
+}
+.ghost-eg h3{
+font-size: 1.2rem;
+color: var(--color1);
+margin-top: 0.6rem;
+}
+.ghost-eg p{
+    width: 100%;
+    max-width: 17rem;
+    text-align: left;
+    margin-top: 0.5rem;
+    padding: 0 0.6rem;
+    font-size: 0.8rem;
+    color: rgb(196, 192, 192);
+}
+
+
+/* for sixth section */
+.haunted-house{
+    margin: 3rem 0;
+    width: 100%;
+    position: relative;
+}
+.haunted-house img{
+    width: 100%;
+    opacity: 0.7;
+    height: 30rem;
+}
+.haunted-house .desc{
+    width: 100%;
+    max-width: 38%;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+.desc p{
+    font-size: 1rem;
+    width: fit-content;
+    text-align: justify;
+    color: var(--color1);
+    line-height: 1.5rem;
+}
+
+/* for seventh section */
+.conseq{
+    margin: 5rem;
+    height: 40rem;
+}
+.conseq .ghosts-img{
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.conseq .ghosts-img img{
+    width: 100%;
+    max-width: 22rem;
+    height: 18rem;
+}
+.conseq .ghosts-img p{
+    color: var(--color1);
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 20rem;
+}
+.ghosts-img .image1{
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
+.ghosts-img .image2{
+    position: absolute;
+    top: 17rem;
+    right: 0;
+}
+
+
+/* for table of details */
+.hiker-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hiker-details h1{
+    color: var(--color1);
+    font-size: 2.5rem;
+}
+.hiker-details .detail-table{
+    margin: 3rem 0;
+    background-image: url(assets/bgimage4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 35rem;
+}
+.detail-table table{
+    /* margin: 4rem 0; */
+    border: 2px solid rgb(63, 168, 187);
+    width: 100%;
+    max-width: 75%;
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(190, 189, 189, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.detail-table table th{
+    border: 2px solid rgb(63, 168, 187);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.detail-table table td{
+    border: 2px solid rgb(63, 168, 187);
+font-size: 1.2rem;
+color: var(--color1);
+}
+
+.detail-table table img{
+    width: 100%;
+    max-width: 20rem;
+    height: 4rem;  
+}
+/* for evidence section */
+.evidence {
+  margin: 1px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.evidence h1 {
+  font-size: 2.5rem;
+  color: var(--color1);
+  text-align: center;
+}
+
+.evidence .forest-img {
+  margin-top: 5rem;
+  background-image: url(assets/bgimage5.jpg);
+  background-position: center;
+  padding: 4rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.evd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgba(134, 131, 131, 0.3);
+  box-shadow: 0.05rem 0.08rem 0.5rem 0.2rem #757373;
+  width: 100%;
+}
+
+/* First row (default width) */
+.row1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  width: 100%;
+max-width: 60rem;
+}
+.row2{
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  width: 100%;
+max-width: 60rem;
+}
+.evd span {
+  margin-top: 1rem;
+  color: var(--color1);
+  text-align: left;
+}
+.evd p {
+  color: rgb(189, 185, 185);
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
+  width: 100%;
+}
+.evd button {
+  width: 6rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 1rem;
+}
+.evd button:hover{
+    background-color: #817b7b;
+    cursor: pointer;
+}
+.evd img {
+  width: 100%;
+  height: 10rem;
+  border-radius: 1rem;
+}
+
+.login-desc{
+    margin: 7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.login-desc h1{
+font-size: 3rem;
+color: var(--color1);
+}
+.login-desc p{
+    font-size: 0.9rem;
+    color: #b8b4b4;
+    margin-top: 1rem;
+    width: 58%;
+}
+
+
+.images-form{
+    background-image: url(assets/candles.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 45rem;
+    position: relative;
+    opacity: 1;
+}
+.images-form .login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(129, 126, 126, 0.5);
+    backdrop-filter: blur(5px);
+}
+.login hr{
+    width: 100%;
+    color: rgb(155, 126, 126);
+    margin-top: 4rem;
+}
+.login h3{
+    margin-top: 0.8rem;
+    color: var(--color1);
+    font-size: 1rem;
+    border-bottom: 0.16rem solid var(--color1);
+}
+.login h1{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 600;
+}
+.login p{
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    color: var(--color1);
+}
+.login .empass{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 1rem;
+}
+.login label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top:1rem;
+    font-size: 0.9rem;
+    color: var(--color1);
+}
+.login label span{
+    font-size: 1rem;
+    cursor: pointer;
+}
+label span i{
+font-size: 0.8rem;
+margin-right: 0.5rem;
+}
+
+.empass p{
+    font-size: 1.1rem;
+    color: var(--color1);
+    margin: 0.8rem 0;
+    text-align: center;
+    text-decoration: underline;
+}
+.login input{
+    margin-top: 0.5rem;
+    border: none;
+    padding: 0.8rem;
+    width: 90%;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+    background-color: rgba(129, 126, 126, 0.5);
+    font:black;
+}
+.login input::placeholder{
+    color: rgb(204, 188, 188);
+}
+
+.empass button{
+    font-size: 1.3rem;
+    color: #383737;
+    background-color: #817b7b;
+    width: 15rem;
+    padding: 0.8rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    cursor: pointer;
+}
+.empass button:hover{
+       color: #ccc7c7;
+    background-color: black;
+}
+
+
+.images-form .signup{
+    background-color: var(--color1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 3.58rem 0; */
+}
+.signup p{
+    color: black;
+    font-size: 1rem;
+    margin-top: 3rem;
+
+}
+.signup button{
+    font-size: 1.3rem;
+    color: #ccc7c7;
+    background-color: black;
+    width: 15rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 2.7rem 0;
+    cursor: pointer;
+}
+.signup button:hover{
+    color: #383737;
+    background-color: #817b7b;
+}
+
+
+
+/* for footer */
+
+footer{
+    background-color: var(--color1);
+    margin: 0;
+}
+footer hr{
+    display: none;
+}
+.contents{
+    padding: 3rem 6rem;
+    display:grid;
+    /* flex-direction: row; */
+    grid-template-columns: 25% 75%;
+    grid-gap: 2rem;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+}
+.contents .about{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: top;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 20rem;
+}
+.contents .logo{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.contents .logo img{
+    width: 100%;
+    max-width: 3rem;
+    margin: 0;
+    padding: 0;
+}
+.contents .about p{
+color: #817b7b;
+margin: 1rem 0;
+}
+.contents .about .icons a{
+    margin-right: 0.7rem;
+    color: #817b7b
+}
+.contents .right-side{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+.contents .right-side h3{
+    font-size: 1rem;
+}
+.contents .right-side ul{
+    margin-top: 0.5rem;
+    list-style: none;
+}
+.contents ul li{
+
+    padding-top: 1rem;
+}
+.contents ul li a{
+    text-decoration: none;
+    color: #817b7b;
+}
+.contents ul li a:hover{
+    color: var(--primary-color);
+}
+
+
+@keyframes fogAnim1 {
+    0% { background-position: -200% 0; }
+    100% { background-position: 0% 0; }
+}
+
+@keyframes fogAnim {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% +100%; }
+}
+
+
+@media (max-width: 1150px){
+        .forest-pic{
+        grid-template-columns: 19rem 19rem;
+    }
+    .gate-image img{
+        min-width: 60rem;
+    }
+    .fog-image .fog{
+        min-width: 60rem;
+    }
+    .fifth-section .ghost-img{
+        max-width: 60rem;
+    }
+}
+@media (max-width: 970px){
+    .description h1{
+    font-size: 9rem;
+}
+    .details h2{
+        font-size: 1.7rem;
+    }
+    .details p{
+        font-size: 0.8rem;
+    }
+    .details span{
+        font-size: 0.5rem;
+    }
+    .forest-pic{
+        grid-template-columns: 16rem 16rem;
+    }
+    .forest-pic img{
+    width: 15rem;
+    height: 24rem;
+}
+.forest-pic .image-content{
+    width: 15rem;
+}
+.forest-pic .image-content h3{
+    font-size: 1.2rem;
+}
+.image-content p{
+    font-size: 0.8rem;
+}
+
+    .gate-image img{
+        min-width: 50rem;
+        height: 34rem;
+    }
+    .fog-image .fog{
+        min-width: 50rem;
+    }
+    .fog-image .second{
+        height: 20rem;
+    }
+    .fifth-section h1{
+        font-size: 2rem;
+    }
+    .fifth-section .ghost-img{
+        max-width: 50rem;
+        height: 30rem;
+    }
+    .ghost-eg .ghost1, .ghost2{
+        max-width: 14rem;
+        top: 18%; 
+    }
+    .ghost-eg .ghost1 img, .ghost-eg .ghost2 img{
+        max-width: 11rem;
+        height: 10rem;
+    }
+    .ghost-eg h3{
+        font-size: 1rem;
+    }
+    .conseq{
+        margin-bottom: 2rem;
+    }
+    .conseq .ghosts-img img{
+        max-width: 15rem;
+        height: 14rem;
+    }
+    .conseq .ghosts-img p{
+        width: 15.6rem;
+    }
+    .hiker-details .detail-table{
+
+    height: 31rem;
+}
+    .detail-table table th{
+    font-size: 1.2rem;
+}
+.detail-table table td{
+font-size: 1rem;
+
+}
+.detail-table table img{
+    width: 100%;
+    max-width: 15rem;
+    height: 4rem;  
+}
+
+    .evidence h1{
+        font-size: 2rem;
+    }
+    .evidence .forest-img{
+        margin-top: 3rem;
+    }
+    .row1{
+        gap: 3rem;
+        max-width: 45rem;
+    }
+    .row2{
+        gap: 3rem;
+        max-width: 45rem;
+    }
+
+
+    /* for footer */
+    .contents{
+        padding: 3rem 1rem;
+            grid-template-columns: 30% 60%;
+    }
+    .contents .about{
+        max-width: 16rem;
+    }
+}
+@media (max-width: 840px) {
+  .hiddenOnMobile {
+    display: none;
+  }
+  .menu-bar{
+    display: block;
+  }
+.details h2{
+        font-size: 1.2rem;
+    }
+    .forest-pic img{
+        width: 12rem;
+        height: 20rem;
+    }
+    .forest-pic{
+          grid-template-columns: 12rem 12rem;
+    }
+    .forest-pic .image-content{
+    width: 12rem;
+}
+.gate-conatiner h1{
+    font-size: 1.8rem;
+}
+    .gate-image img{
+        min-width: 40rem;
+        height: 30rem;
+    }
+    .fog-image .fog{
+        min-width: 40rem;
+    }
+    .haunted-house .desc{
+        max-width: 48%;
+    }
+    .evidence .forest-img{
+        margin-top: 3rem;
+         padding: 3rem 4rem;
+    }
+    .row1{
+        gap: 2rem;
+        max-width: 50rem ;
+        height: 20rem;
+    }
+    .row2{
+         max-width: 50rem ;
+        height: 20rem;
+    }
+}
+
+@media(max-width:700px){
+.nav-conatiner{
+height: 30rem;}
+.nav-conatiner .description{
+top: 24%;
+}
+.description h1{
+font-size: 5rem;}
+.description p{
+font-size: 1rem;
+}
+.nav-conatiner h2{
+font-size: 1rem;
+}
+.intro-desrp{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.intro-desrp .details{
+max-width: 30rem;
+align-items: center;
+}
+.details h2{
+font-size: 1.4rem;}
+.details p{
+    font-size: 0.9rem;
+}
+.details span{
+    font-size: 0.8rem;
+    width: fit-content;
+    padding:0.3rem 0.7rem;
+}
+.intro-desrp .forest-pic{
+margin-top: 2rem;
+}
+.forest-pic{
+  grid-template-columns: 18rem 18rem;}
+.forest-pic img{
+    width: 15rem;
+    height: 20rem;
+}
+.forest-pic .image-content{
+    width: 15rem;}
+
+.gate-image .location{
+bottom :1rem;
+font-size: 1rem;
+padding: 0.5rem 1rem;
+}
+.gate-image .location span i{font-size: 0.9rem;
+}
+.gate-image img{
+    min-width: 35rem;
+    height: 25rem;
+}
+.fog-image .fog{
+    min-width: 35rem;
+}
+    .ghost-eg .ghost1 img, .ghost-eg .ghost2 img{
+        height: 10rem;
+    }
+    .haunted-house .desc{
+        max-width: 60%;
+        top: 70%;
+    }
+.conseq .ghosts-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ghosts-img .image1, .ghosts-img .image2{
+    position: static;
+    margin-top: 2rem;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.conseq .ghosts-img img{
+    min-width: 30rem;
+}
+.conseq .ghosts-img p{
+    margin-left: 2rem;
+    width:25rem;
+    align-items: center;
+    text-align: center;
+}
+    
+    .row1{
+        max-width: 40rem ;
+        height: 17rem;
+    }
+    .row2{
+        max-width: 40rem;
+        gap: 3rem;
+    }
+    .evd img{
+        height: 7rem;
+    }
+    .login-desc{
+        margin:4rem 0;
+    }
+     .login-desc h1{
+        font-size: 2rem;
+     }
+    .images-form .login{
+        max-width: 100%;
+    }
+
+    /* for footer */
+    footer hr{
+        display: block;
+    }
+    .contents{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contents .about{
+    text-align: center;
+}
+.contents .logo{
+    justify-content: center;
+}
+.contents .right-side{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 3rem;
+}
+}
+
+@media (max-width:640px){
+.nav-conatiner{
+height: 25rem;}
+.nav-conatiner .description{
+top: 34%;
+}
+.intro-desrp .details{
+max-width: 25rem;
+}
+.forest-pic{
+    display: grid;
+    grid-template-columns: 15rem 15rem;
+}
+.forest-pic img{
+    width: 12rem;
+    height: 17rem;
+}
+.forest-pic .image-content{
+    width: 12rem;}
+
+.forest-pic .image-content p{
+font-size: 0.7rem;
+}
+.gate-image img{
+min-width: 27rem;
+}
+ .fog-image .fog{
+ min-width: 27rem;
+ }
+ .fog-image .second{
+ height: 12rem;
+ }
+ .ghost-eg{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.ghost-eg .ghost1, .ghost2{
+position: static;
+max-width: 20rem;
+margin-top: 1rem;
+top: 10%; 
+}
+.ghost-eg .ghost1{
+    left: 0;
+}
+.ghost-eg .ghost2{
+    right: 0;
+}
+.ghost-eg .ghost1 img, .ghost-eg .ghost2 img{
+max-width: 15rem;
+height: 7rem;
+}
+.haunted-house img{
+height: 20rem;
+}
+.haunted-house .desc{
+    max-width: 68%;
+    position: absolute;
+    top: 40%;
+    left: 7%;
+}
+.desc p{
+font-size: 0.8rem;}
+.conseq .ghosts-img img{
+    min-width: 22rem;
+}
+.conseq .ghosts-img p{
+width: 18rem;
+ }
+ .evidence .forest-img{
+ margin-top: 1rem;
+ padding: 2rem 0;}
+ .evd {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;}
+    
+     .row1{
+        max-width: 30rem ;
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+.row2{
+        display: none;
+    }
+    .hiker-details h1{
+        font-size: 1.5rem;
+    }
+    .hiker-details .detail-table{
+    margin: 2rem 0;
+    height: 21rem;
+}
+.detail-table table img{
+    width: 100%;
+    max-width: 10rem;
+    height: 2rem;  
+}
+.detail-table table th{
+    font-size: 0.8rem;
+}
+.detail-table table td{
+font-size: 0.7rem;
+
+}
+
+
+ .evd span {
+font-size: 0.8rem;
+}
+.evd p {
+
+  font-size: 0.6rem;
+  margin-top: 0.4rem;
+}
+.evd button {
+  width: 5rem;
+  padding: 0.3rem 0.3rem;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+}
+.contents .right-side{
+    
+    padding: 2rem 1rem;
+}
+ }
+
+@media (max-width:540px){
+    .sidebar{
+        width: 100%;
+    }
+.nav-conatiner{
+height: 20rem;
+}
+
+.description p{
+    font-size: 0.8rem;
+}
+.nav-conatiner h2{
+bottom: 1rem;
+left: 34%;
+padding: 0.6rem 1rem;
+}
+.intro-desrp .forest-pic{
+padding-left: 0rem;
+}
+.forest-pic{
+    grid-template-columns: 12rem 12rem;
+}
+.for-gate{
+    margin: 1rem;
+}
+.gate-conatiner h1{
+    font-size: 1.3rem;
+}
+.gate-image img{
+    min-width:20rem;
+    height: 20rem;
+}
+ .fog-image .fog {
+    min-width: 20rem;
+}
+.fifth-section h1{
+    font-size: 1.3rem;
+}
+.conseq{
+    margin: 1rem;
+}
+.conseq .ghosts-img{
+    margin: 0
+}
+.conseq .ghosts-img img{
+    min-width: 8rem;
+    height: 14rem;
+}
+.conseq .ghosts-img p{
+    font-size: 0.7rem;
+    width: 12rem;
+}
+.evidence h1 {
+  font-size: 1.3rem;
+}
+.row1 .evd-3{
+display: none;
+}
+.row1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+max-width: 20rem;
+}
+.login-desc h1{
+font-size: 2rem;
+}
+.login-desc p{
+    font-size: 0.7rem;
+    width: 64%;
+}
+.contents .right-side{
+display: grid;
+grid-template-columns:  50% 50%;
+padding-left:25% ;
+}
+.developers, .company{
+    padding-top: 2rem;
+}
+}
