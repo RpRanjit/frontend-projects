@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <div class="nav_logo">
+                    <a href="#">
+                        <img src="assets/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="nav_menu_btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav_links" id="nav-links">
+                <li><a href="#home"><span>Home</span></a></li>
+                <li><a href="#menu"><span>Menu</span></a></li>
+                <li><a href="#about_us"><span>About Us</span></a></li>
+            </ul>
+        </nav>
+        <div class="section_container header_container" id="home">
+            <h1>High Quality Bread & Coffee For a Good Day</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, consequatur. Ab eum explicabo facere molestiae quidem laborum quis commodi voluptate ducimus. Eos vel non adipisci provident recusandae illo vero architecto soluta, ratione totam commodi dolorem.
+            </p>
+            <div class="header_btns">
+                <button class="btn">Let's Eat</button>
+                <button class="btn">Book a Table</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu" id="menu">
+        <div class="section_container menu_container">
+            <h2 class="section_header">
+                Popular Menu
+            </h2>
+            <a href="#">
+                View All
+                <i class="ri-arrow-right-long-line"></i>
+            </a>
+            <div class="menu_grid">
+                <div class="menu_card">
+                    <img src="assets/menu1.jpg" alt="menu">
+                    <div class="menu_card_content">
+                        <h4>Cinnamon with Dark Chocolate</h4>
+                        <h3>$14.00</h3>
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <img src="assets/menu2.jpg" alt="menu">
+                    <div class="menu_card_content">
+                        <h4>Chocolate Cake</h4>
+                        <h3>$14.00</h3>
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <img src="assets/menu3.jpg" alt="menu">
+                    <div class="menu_card_content">
+                        <h4>Variety of Donuts</h4>
+                        <h3>$14.00</h3>
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <img src="assets/menu4.jpg" alt="menu">
+                    <div class="menu_card_content">
+                        <h4>Different Flavour Ice-cream</h4>
+                        <h3>$20.00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book">
+        <div class="section_container book_container">
+            <form action="/">
+                <h4>Book a Table</h4>
+                <div class="input_row">
+                    <div class="input_group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" placeholder="First Name"/>
+                    </div>
+                    <div class="input_group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" placeholder="Last Name"/>
+                    </div>
+                </div>
+                <div class="input_row">
+                    <div class="input_group">
+                        <label for="date">First Date</label>
+                        <input type="date" placeholder="First Date"/>
+                    </div>
+                    <div class="input_group">
+                        <label for="person">Person</label>
+                        <input type="number" placeholder="Person"/>
+                    </div>
+                </div>
+                <div class="input_row">
+                    <button class="btn" type="submit">Book A Table</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="section_container about_container" id="about">
+        <div class="about_image">
+            <img src="assets/about.jpg" alt="about">
+        </div>
+        <div class="about_content">
+            <h2 class="section_header">
+                About Our World
+            </h2>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rerum error a eos neque, reiciendis perspiciatis sunt hic dolor voluptates consequatur aspernatur eius sequi dolore libero obcaecati, officia qui, consectetur dolorum et placeat aperiam! Exercitationem a quia voluptates! Id sapiente temporibus possimus rerum cumque, assumenda ex nam inventore blanditiis libero.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quasi deserunt expedita eaque nam nostrum iure placeat voluptatem distinctio delectus?</p>
+                <div class="about_btn">
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="section_container footer_container">
+            <div class="footer_col">
+                <a href="#" class="footer_logo">
+                    <img src="assets/logo.png" alt="logo"/>
+                </a>
+            </div>
+            <div class="footer_col">
+                <h4>Blogs</h4>
+                <ul class="footer_links">
+                    <li>
+                        <a href="#">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aut.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, minima.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quae natus consectetur.
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>NewItems</h4>
+                <ul class="footer_links">
+                    <li><a href="#">Menu Highlights</a></li>
+                    <li><a href="#">Daily Specials</a></li>
+                    <li><a href="#">Customer Testimonials</a></li>
+                    <li><a href="#">Baking Workshop</a></li>
+                    <li><a href="#">Blog & Recipe</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Social Media</h4>
+                <ul class="footer_links">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bar">
+            Copyright © 2025. All rights reserved. 
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
